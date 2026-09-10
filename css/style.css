@@ -1,17 +1,53 @@
-/* Truco para uniformidad en textos entre navegadores */
-html{
-    font-size: 62.5%
+/* Trucos para uniformidad en textos entre navegador   */
+:root{
+    --blanco: #fff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #26939f;
+    --gris: #757575;
 }
-
-body {
+html{
+    font-size: 62.5%;
+}
+body{
     font-size: 16px;
 }
 
-.my-title {
+.my-title{
+    font-size: 3rem;
     text-align: center;
-    font-size: 3.8rem;
 }
 
-.my-title span {
+.my-title span{
+    font-size: 2rem;
+    color: #f9a826;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
     font-size: 2rem;
 }
+
+.navegacion-principal a{
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+

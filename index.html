@@ -4,6 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+
         <!-- Normalize CSS -->
         <link rel="preload" href="css/normalize.css" as="style">
         <link rel="stylesheet" href="css/normalize.css">
@@ -18,12 +23,14 @@
         <header>
             <h1 class="my-title">Roberto Balmes <span>Developer</span></h1>
         </header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Sobre mi</a>
-            <a href="#">Cliente</a>
-            <a href="#">Contacto</a>
-        </nav>
+        <div class="nav-bg">
+            <nav class="navegacion-principal contenedor">
+                <a href="#">Inicio</a>
+                <a href="#">Sobre mi</a>
+                <a href="#">Cliente</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
         <section>
             <h2>Desarrollador full stack</h2>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin">
@@ -61,6 +68,10 @@
                     <div>
                         <label>Nombre</label>
                         <input type="text" placeholder="Tu nombre">
+                    </div>
+                    <div>
+                        <label>Telefono</label>
+                        <input type="tel" placeholder="Tu telefono">
                     </div>
                     <div>
                         <label>Email</label>
