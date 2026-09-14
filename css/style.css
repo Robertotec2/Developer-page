@@ -50,4 +50,27 @@ body{
     margin: 0 auto;
 }
 
+.hero{
+    background-image: url(../Imagen/af16939106741e3caa1e64bc9b460812.jpg); /* ../ es para regresar un nivel
+    de directorio ya que la carpeta "Imagen" está afuera de "css" */
+    background-repeat: no-repeat; /* Sirve para evitar la repetición de la imagen cuando es pequeña */
+    background-size: cover; /*Sirve para cubrir la imagen con todo el tamaño*/
+    background-position: center; /*Centra la imagen dentro del elemento*/
+    height: 450px; /*Alto del elemento hero*/
+    position: relative; /*Para manipular la posición. El padre siempre debe ser relative*/
+}
+
+.contenido-hero{
+    position: absolute; /*Para manipular la posición. El hijo siempre debe ser absolute*/
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    color: var(--blanco);
+    /*Alinear vertical y horizontalmente*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
